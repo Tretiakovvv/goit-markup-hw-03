@@ -23,8 +23,6 @@ body {
   margin: 0;
 }
 
-
-
 /* Утилиты */
 
 h1,
@@ -39,26 +37,23 @@ ul {
   padding: 0;
 }
 
-.container{
+.container {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.main-nav{
+.main-nav {
   display: flex;
-  
-   border-bottom: 1px solid #ECECEC;
-  
+
+  border-bottom: 1px solid #ececec;
 }
 
 /* logo */
-.nav-header{
+.nav-header {
   display: flex;
-  
 }
 .logo {
   margin-right: 93px;
@@ -89,20 +84,15 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding-top: 32px;
-  padding-bottom:32px;
-  
+  padding-bottom: 32px;
 }
 
-
-.header-list{
+.header-list {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
-  
 }
-
-
 
 .link {
   color: var(--primary-text-color);
@@ -123,7 +113,7 @@ ul {
 .header-list {
   list-style: none;
 }
- .item:not(:last-child){
+.item:not(:last-child) {
   margin-right: 50px;
 }
 .header-link {
@@ -141,17 +131,15 @@ ul {
 /* основной контент */
 /* ГЕРОЙ */
 .hero {
-  
   background-color: var(--secondary-color);
   text-align: center;
 }
-.top{
+.top {
   padding-top: 200px;
-
 }
 
 .hero-title {
-margin-bottom: 30px;
+  margin-bottom: 30px;
   color: white;
   font-weight: 900;
   font-size: 44px;
@@ -160,14 +148,14 @@ margin-bottom: 30px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.padding-bottom{
-padding-bottom: 200px;
+.padding-bottom {
+  padding-bottom: 200px;
 }
 .primary-button {
   padding: 10px 32px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--button-color);
   font-family: inherit;
@@ -182,19 +170,17 @@ border: none;
   background-color: var(--primary-button-hover-focus);
 }
 /* Приемущества сайта */
-.main-sextion{
+.main-sextion {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.main-list .item:not(:last-child){
-  margin-right: 30px;}
+.main-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .main-list {
   list-style: none;
   display: flex;
- 
-  
-
 }
 .main-title {
   margin-bottom: 10px;
@@ -203,16 +189,14 @@ border: none;
   line-height: 1.1;
   text-transform: uppercase;
 }
-.main-text{
+.main-text {
   font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
-
-
 /* чем занимается фирма */
-.work-section{
+.work-section {
   padding-bottom: 94px;
 }
 .work-title {
@@ -227,7 +211,7 @@ border: none;
   list-style: none;
   display: flex;
 }
-.work-list .item:not(:last-child){
+.work-list .item:not(:last-child) {
   margin-right: 30px;
 }
 /* Наша команда */
@@ -251,19 +235,18 @@ border: none;
   list-style: none;
   display: flex;
 }
-.team-list > .item:not(:last-child){
+.team-list > .item:not(:last-child) {
   margin-right: 30px;
-  
 }
-  .team-list > .item{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-background-color: var(--background-color);
-  }
+.team-list > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-color);
+}
 
 .worker {
   background-color: var(--background-color);
- 
 }
 .team-name {
   margin-bottom: 10px;
@@ -281,7 +264,6 @@ background-color: var(--background-color);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  
 }
 /* Подвал сайта */
 .logo-footer {
@@ -346,12 +328,25 @@ background-color: var(--background-color);
   letter-spacing: 0.03em;
 }
 /* Футер */
-.footer .logo{
-  display: block;
+
+.footer {
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: block;
+
   padding-bottom: 0;
   margin-bottom: 20px;
 }
 .footer-address {
+  padding-bottom: 9px;
+}
+
+.footer-link {
+  display: block;
+}
+.container .footer-link:not(:last-child) {
   padding-bottom: 9px;
 }
