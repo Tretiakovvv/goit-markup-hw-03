@@ -45,7 +45,7 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 .main-nav{
@@ -93,7 +93,7 @@ ul {
   
 }
 
-.site-nav .item:not(:last-child) {
+.item:not(:last-child) {
   margin-right: 40px;
 }
 .header-list{
@@ -125,7 +125,7 @@ ul {
 .header-list {
   list-style: none;
 }
-.header-list .item:not(:last-child){
+ .item:not(:last-child){
   margin-right: 50px;
 }
 .header-link {
@@ -143,9 +143,17 @@ ul {
 /* основной контент */
 /* ГЕРОЙ */
 .hero {
+  margin-bottom: 94px;
   background-color: var(--secondary-color);
+  text-align: center;
 }
+.top{
+  padding-top: 200px;
+
+}
+
 .hero-title {
+margin-bottom: 30px;
   color: white;
   font-weight: 900;
   font-size: 44px;
@@ -154,11 +162,17 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.padding-bottom{
+padding-bottom: 200px;
+}
 .primary-button {
+  padding: 10px 32px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
   background-color: var(--accent-color);
   color: var(--button-color);
   font-family: inherit;
-  border: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -170,15 +184,30 @@ ul {
   background-color: var(--primary-button-hover-focus);
 }
 /* Приемущества сайта */
+
+
 .main-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  
+
 }
 .main-title {
+  margin-bottom: 10px;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
 }
+.main-text{
+  font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+
+
 /* чем занимается фирма */
 
 .work-title {
