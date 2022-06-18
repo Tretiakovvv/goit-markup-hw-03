@@ -13,6 +13,8 @@
   --button-color: #ffffff;
   --portfolio-title: #212121;
   --primary-button-hover-focus: #188ce8;
+  --projects-list-gap: 30px;
+
 }
 body {
   background-color: var(--background-color);
@@ -36,7 +38,12 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Стилизация */
 .container {
   width: 1170px;
   padding-left: 15px;
@@ -290,9 +297,16 @@ ul {
 /* Страница портфолио */
 /* Секция кнопки */
 .projects-buttons {
+  display:flex;
   list-style: none;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .secondary-button {
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -301,6 +315,14 @@ ul {
   border: none;
   cursor: pointer;
 }
+.projects-buttons > .item:not(:last-child){
+  margin-right: 8px;
+}
+
+ 
+.projects-content > .projects-title{
+  box-sizing: content-box;
+}
 .secondary-button:focus,
 .secondary-button:hover {
   background-color: var(--accent-color);
@@ -308,8 +330,38 @@ ul {
 }
 /* Секция проекты */
 .projects-list {
+  margin-right: calc(-1 * var(--projects-list-gap));
+  margin-bottom: calc(-1 * var(--projects-list-gap));
+  flex-wrap: wrap;
+  display: flex;
   list-style: none;
   box-sizing: border-box;
+  padding-bottom: 94px;
+  
+}
+.projects-list > .item-card{
+flex-basis: calc(100% / 3 - var(--projects-list-gap));
+margin-right: var(--projects-list-gap);
+margin-bottom: var(--projects-list-gap);
+
+}
+
+  
+
+.projects-content{
+  padding-bottom: 20px;
+  margin-left: 24px;
+}
+
+  
+.border{
+border: 1px solid #EEEEEE;
+border-top: none;
+}
+
+.projects-title{
+  padding-bottom: 4px;
+  padding-top: 20px;
 }
 .projects-link {
   background-color: #eeeeee;
