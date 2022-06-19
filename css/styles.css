@@ -14,7 +14,6 @@
   --portfolio-title: #212121;
   --primary-button-hover-focus: #188ce8;
   --projects-list-gap: 30px;
-
 }
 body {
   background-color: var(--background-color);
@@ -44,6 +43,7 @@ img {
   height: auto;
 }
 /* Стилизация */
+
 .container {
   width: 1170px;
   padding-left: 15px;
@@ -55,7 +55,7 @@ img {
 .main-nav {
   display: flex;
 
-  border-bottom: 1px solid #ececec;
+  
 }
 
 /* logo */
@@ -140,10 +140,9 @@ img {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-    padding-top: 200px;
-     padding-bottom: 200px;
-  }
-
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .hero-title {
   margin-bottom: 30px;
@@ -154,6 +153,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
 
 .primary-button {
   padding: 10px 32px;
@@ -222,12 +222,12 @@ img {
 .team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team-photo {
   background-color: var(--background-color);
 }
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
@@ -270,6 +270,10 @@ img {
   letter-spacing: 0.03em;
 }
 /* Подвал сайта */
+.container > .logo {
+  padding-top: 0;
+}
+
 .logo-footer {
   color: var(--background-color);
 }
@@ -293,8 +297,12 @@ img {
 }
 /* Страница портфолио */
 /* Секция кнопки */
+.header-border{
+  border: 1px solid #ECECEC;
+}
+
 .projects-buttons {
-  display:flex;
+  display: flex;
   list-style: none;
   justify-content: center;
   padding-top: 94px;
@@ -302,8 +310,9 @@ img {
 }
 .secondary-button {
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -312,12 +321,11 @@ border-radius: 4px;
   border: none;
   cursor: pointer;
 }
-.projects-buttons > .item:not(:last-child){
+.projects-buttons > .item:not(:last-child) {
   margin-right: 8px;
 }
 
- 
-.projects-content > .projects-title{
+.projects-content > .projects-title {
   box-sizing: content-box;
 }
 .secondary-button:focus,
@@ -334,29 +342,24 @@ border-radius: 4px;
   list-style: none;
   box-sizing: border-box;
   padding-bottom: 94px;
-  
 }
-.projects-list > .item-card{
-flex-basis: calc(100% / 3 - var(--projects-list-gap));
-margin-right: var(--projects-list-gap);
-margin-bottom: var(--projects-list-gap);
-
+.projects-list > .item-card {
+  flex-basis: calc(100% / 3 - var(--projects-list-gap));
+  margin-right: var(--projects-list-gap);
+  margin-bottom: var(--projects-list-gap);
 }
 
-  
-
-.projects-content{
+.projects-content {
   padding-bottom: 20px;
   margin-left: 24px;
 }
 
-  
-.border{
-border: 1px solid #EEEEEE;
-border-top: none;
+.border {
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
-.projects-title{
+.projects-title {
   padding-bottom: 4px;
   padding-top: 20px;
 }
