@@ -297,6 +297,10 @@ img {
 }
 /* Страница портфолио */
 /* Секция кнопки */
+.projects{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .header-border{
   border: 1px solid #ECECEC;
 }
@@ -305,7 +309,6 @@ img {
   display: flex;
   list-style: none;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .secondary-button {
@@ -341,7 +344,7 @@ img {
   display: flex;
   list-style: none;
   box-sizing: border-box;
-  padding-bottom: 94px;
+  
 }
 .projects-list > .item-card {
   flex-basis: calc(100% / 3 - var(--projects-list-gap));
