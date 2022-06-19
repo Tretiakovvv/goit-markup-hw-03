@@ -252,9 +252,13 @@ img {
 .worker {
   background-color: var(--background-color);
 }
+.padding-team{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
   margin-bottom: 10px;
-  padding-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -263,7 +267,6 @@ img {
   color: var(--primary-text-color);
 }
 .team-text {
-  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
