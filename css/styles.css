@@ -180,6 +180,9 @@ img {
 .main-list .item:not(:last-child) {
   margin-right: 30px;
 }
+.main-list > .item{
+  flex-basis: calc(100% / 3 - 30px);
+}
 
 .main-list {
   list-style: none;
@@ -216,6 +219,9 @@ img {
 }
 .work-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.work-list > .item{
+  flex-basis: calc(100% / 2 - 30px);
 }
 /* Наша команда */
 .team {
